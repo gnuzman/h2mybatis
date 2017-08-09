@@ -4,9 +4,9 @@ import com.zzh.h2mybatis.entities.PersonEntity;
 import com.zzh.h2mybatis.services.PersonService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.sql.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Api(tags = "person")
