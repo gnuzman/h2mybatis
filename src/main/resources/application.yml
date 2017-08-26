@@ -13,8 +13,8 @@ spring:
     minIdle: 1
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000
-    validationQuery: select 1
-    testWhileIdle: true
+#    validationQuery: select 1
+#    testWhileIdle: false
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
@@ -31,3 +31,10 @@ mybatis:
     #mapper.xml文件所在的路径
     mapperLocations: classpath:mappers/*.xml
     typeAliasesPackage: tk.mapper.model
+
+
+logging:
+  level:
+    #mapper.class文件所在的路径
+    com.zzh.h2mybatis.mappers: debug
+    com.ibatis.sqlmaps: debug

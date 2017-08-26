@@ -4,4 +4,9 @@
     <insert id="addPerson" parameterType="com.zzh.h2mybatis.entities.PersonEntity" useGeneratedKeys="true" keyProperty="id">
         insert into PERSON (ID, FIRSTNAME, LASTNAME) values (#{id}, #{firstName}, #{lastName})
     </insert>
+
+    <select id="getPersons" resultType="com.zzh.h2mybatis.entities.PersonEntity">
+        select ID as id, FIRSTNAME as firstName, LASTNAME as lastName
+        from PERSON
+    </select>
 </mapper>

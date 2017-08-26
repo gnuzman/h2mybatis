@@ -5,6 +5,8 @@ import com.zzh.h2mybatis.mappers.PersonMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PersonService {
     @Autowired
@@ -13,4 +15,5 @@ public class PersonService {
     public Long addPerson(PersonEntity personEntity) {
         return personMapper.addPerson(personEntity);
     }
+
 }
